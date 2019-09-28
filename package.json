@@ -1,11 +1,11 @@
 {
   "name": "terraform-latest",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Module to install terraform deployer via node",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "node index.js"
+    "postpack": "node index.js"
   },
   "repository": {
     "type": "git",
