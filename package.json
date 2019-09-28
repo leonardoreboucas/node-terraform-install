@@ -1,11 +1,10 @@
 {
   "name": "terraform-latest",
-  "version": "0.0.10",
-  "description": "Module to install terraform deployer via node",
+  "version": "0.0.11",
+  "description": "Module to install the last version of terraform",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall":"pwd ; mkdir -p /usr/lib/node_modules/terraform ; touch /usr/lib/node_modules/terraform/terraform",
     "postinstall": "node index.js"
   },
   "repository": {
@@ -17,9 +16,6 @@
     "installer"
   ],
   "author": "Leonardo Rebouças de Carvalho",
-  "bin": {
-    "terraform": "../terraform/terraform"
-  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/leonardoreboucas/node-terraform-latest/issues"
