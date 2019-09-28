@@ -29,11 +29,11 @@ switch(process.platform) {
 }
 tf_url = tf_url+tf_last_version+"/terraform_"+tf_last_version+"_"+system_os+"_"+platform+".zip"
 shell.echo('Terraform '+tf_last_version+' will be installed...');
-shell.mkdir('-p', '~/.npm/terraform/');
-shell.exec('curl -s -o ~/.npm/terraform/terraform.zip '+tf_url)
-shell.exec('unzip -o -q ~/.npm/terraform/terraform.zip -d ~/.npm/terraform/')
-shell.rm('~/.npm/terraform/terraform.zip')
-shell.exec('echo "PATH=$PATH:~/.npm/terraform" >> ~/.env')
+shell.mkdir('-p', '~/terraform/');
+shell.exec('curl -s -o ~/terraform/terraform.zip '+tf_url)
+shell.exec('unzip -o -q ~/terraform/terraform.zip -d ~/terraform/')
+shell.rm('~/terraform/terraform.zip')
+shell.exec('echo "PATH=$PATH:~/terraform" >> ~/.env')
 shell.exec('cat ~/.env >> ~/.bashrc')
-shell.exec('export PATH=$PATH:~/.npm/terraform')
+shell.exec('export PATH=$PATH:~/terraform')
 shell.echo('Finished!');
