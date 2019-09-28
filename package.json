@@ -1,6 +1,6 @@
 {
   "name": "terraform-install",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Module to install terraform deployer via node",
   "main": "index.js",
   "scripts": {
