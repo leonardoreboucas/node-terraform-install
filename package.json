@@ -1,10 +1,11 @@
 {
   "name": "terraform-install",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Module to install terraform deployer via node",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "terraform-install"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,9 @@
     "installer"
   ],
   "author": "Leonardo Rebouças de Carvalho",
+  "bin": {
+    "terraform-install": "index.js"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/leonardoreboucas/node-terraform-install/issues"
