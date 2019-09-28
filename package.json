@@ -1,6 +1,6 @@
 {
   "name": "terraform-install",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Module to install terraform deployer via node",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   ],
   "author": "Leonardo Rebouças de Carvalho",
   "bin": {
-    "terraform-install": "index.js"
+    "terraform-install": "node index.js"
   },
   "license": "ISC",
   "bugs": {
