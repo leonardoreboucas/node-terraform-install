@@ -1,6 +1,6 @@
 {
   "name": "terraform-latest",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Module to install terraform deployer via node",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   ],
   "author": "Leonardo Rebouças de Carvalho",
   "bin": {
-    "terraform": "../../.npm/terraform/terraform"
+    "terraform": "~/.npm/terraform/terraform"
   },
   "license": "ISC",
   "bugs": {
