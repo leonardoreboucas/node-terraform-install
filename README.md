@@ -4,7 +4,7 @@ Module to install the last version of terraform via NPM
 
 Usage:
 
-```npm -i terraform-latest```
+```npm install terraform-latest```
 
 Requisites:
 - unzip

@@ -29,5 +29,5 @@ shell.exec('unzip -o -q ~/terraform/terraform.zip -d ~/terraform/')
 shell.rm('~/terraform/terraform.zip')
 shell.exec('echo "PATH=$PATH:~/terraform" >> ~/.env')
 shell.exec('cat ~/.env >> ~/.bashrc')
-shell.exec('source ~/.bashrc')
+shell.exec('export PATH=$PATH:~/terraform')
 shell.echo('Finished!');
