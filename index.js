@@ -1,3 +1,9 @@
+let user = process.env.USER || ""
+if (user == 'root') {
+  shell.echo('This module cant be installed with root privileges');
+  shell.exit(1);
+}
+
 var shell = require('shelljs');
 if ((!shell.which('curl'))||(!shell.which('grep'))||(!shell.which('head'))||(!shell.which('unzip'))) {
   shell.echo('Your system should have curl,grep,unzip and head in order to this module work properly');
