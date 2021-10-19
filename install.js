@@ -1,5 +1,5 @@
-var shell = require('shelljs');
-let user = process.env.USER || "";
+const shell = require('shelljs');
+const user = process.env.USER || "";
 if (user == 'root') {
   shell.echo('This module cant be installed with root privileges');
   shell.exit(1);
@@ -10,8 +10,8 @@ if ((!shell.which('curl'))||(!shell.which('grep'))||(!shell.which('head'))||(!sh
   shell.exit(1);
 }
 
-var tf_url = "https://releases.hashicorp.com/terraform/"
-var tf_last_version = shell.exec("curl -s "+tf_url+" | grep terraform_ | head -n 1 | awk -F'>' '{print $2}' | awk -F'<' '{print $1}'", {silent:true}).stdout;
+let tf_url = "https://releases.hashicorp.com/terraform/"
+let tf_last_version = shell.exec("curl -s "+tf_url+" | grep terraform_ | head -n 1 | awk -F'>' '{print $2}' | awk -F'<' '{print $1}'", {silent:true}).stdout;
 tf_last_version = tf_last_version.replace('\n','').replace('terraform_','')
 
 switch(process.platform) {
