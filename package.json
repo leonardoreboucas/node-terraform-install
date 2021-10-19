@@ -1,12 +1,19 @@
 {
   "name": "terraform-latest",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Module to install the last version of terraform",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node index.js",
-    "postuninstall": "rm -rf ~/terraform"
+    "postinstall": "cross-os bar",
+    "postuninstall": "rm -rf /usr/local/bin/terraform"
+  },
+  "cross-os": {
+    "bar": {
+      "darwin": "echo 'This will only run on Mac'; node index.js",
+      "win32": "echo 'Sorry, but Windows is not suported'",
+      "linux": "echo 'This will only run on Linux'; node index.js"
+    }
   },
   "repository": {
     "type": "git",
