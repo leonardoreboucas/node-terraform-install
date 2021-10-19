@@ -1,6 +1,6 @@
 {
   "name": "terraform-latest",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Module to install the last version of terraform",
   "main": "index.js",
   "scripts": {
