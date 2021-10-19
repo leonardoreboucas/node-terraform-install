@@ -1,12 +1,12 @@
 {
   "name": "terraform-latest",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Module to install the last version of terraform",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "/usr/local/bin/node index.js",
-    "postuninstall": "/bin/rm -rf /usr/local/bin/terraform"
+    "uninstall": "/bin/rm -rf /usr/local/bin/terraform"
   },
   "repository": {
     "type": "git",
