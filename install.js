@@ -36,4 +36,5 @@ shell.exec('unzip -o -q /tmp/terraform/terraform.zip -d ~/.terraform/')
 shell.rm('/tmp/terraform/terraform.zip')
 shell.exec('echo "export PATH=$PATH:~/.terraform/" >> ~/.profile')
 shell.exec('export PATH=$PATH:~/.terraform/')
+shell.exec('source ~/.profile')
 shell.echo('Finished!');
