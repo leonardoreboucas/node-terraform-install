@@ -1,3 +1,9 @@
 const fs = require('fs');
-const filePath = '/usr/local/bin/terraform'; 
-fs.unlinkSync(filePath);
+const filePath = '~/.terraform/terraform'; 
+try {
+  if (fs.existsSync(filePath)) {
+    fs.unlinkSync(filePath);
+  }
+} catch(err) {
+  console.error(err)
+}
