@@ -1,6 +1,6 @@
 {
   "name": "terraform-latest",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "Module to install the last version of terraform",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/leonardoreboucas/node-terraform-latest#readme",
   "dependencies": {
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.5"
   }
 }
