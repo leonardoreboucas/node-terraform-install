@@ -1,5 +1,6 @@
 const fs = require('fs');
-const os = require('');
+const os = require('os');
+console.log(os.homedir())
 const filePath = os.homedir()+'/.terraform/terraform'; 
 try {
   if (fs.existsSync(filePath)) {
