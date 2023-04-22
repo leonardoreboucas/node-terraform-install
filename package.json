@@ -1,11 +1,11 @@
 {
   "name": "terraform-latest",
-  "version": "0.1.19",
+  "version": "1.3.7",
   "description": "Module to install the last version of terraform",
   "main": "index.js",
   "scripts": {
-    "postinstall": "/usr/local/bin/node install.js",
-    "prepare": "/usr/local/bin/node prepare.js"
+    "postinstall": "node install.js",
+    "prepare": "node prepare.js"
   },
   "repository": {
     "type": "git",
