@@ -11,7 +11,7 @@ if ((!shell.which('curl'))||(!shell.which('grep'))||(!shell.which('head'))||(!sh
 }
 
 let tf_url = "https://releases.hashicorp.com/terraform/"
-let tf_last_version = 1.2.8
+let tf_last_version = "1.2.8"
 //let tf_last_version = shell.exec("curl -s "+tf_url+" | grep terraform_ | head -n 1 | awk -F'>' '{print $2}' | awk -F'<' '{print $1}'", {silent:true}).stdout;
 //tf_last_version = tf_last_version.replace('\n','').replace('terraform_','')
 
